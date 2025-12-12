@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Natal Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="snow" id="snow"></div>
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-content" id="cardContent">
+                <h1 id="greeting">Feliz Natal!</h1>
+                <div class="snow-effect"></div>
+                <p id="message">Uma noite mágica cheia de alegria e amor!</p>
+                <div class="decoration">
+                    <span class="ornament"></span>
+                    <span class="ornament"></span>
+                    <span class="ornament"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h2>Personalizador</h2>
+            
+            <div class="control-group">
+                <label for="greeting-input">Sua Mensagem Principal:</label>
+                <input type="text" id="greeting-input" value="Feliz Natal!" placeholder="Digite sua mensagem...">
+            </div>
+
+            <div class="control-group">
+                <label for="message-input">Mensagem Secundária:</label>
+                <textarea id="message-input" rows="3" placeholder="Digite uma mensagem adicional...">Uma noite mágica cheia de alegria e amor!</textarea>
+            </div>
+
+            <div class="control-group">
+                <label for="color-picker">Cor Principal:</label>
+                <input type="color" id="color-picker" value="#d32f2f">
+            </div>
+
+            <div class="control-group">
+                <label for="bg-color-picker">Cor de Fundo:</label>
+                <input type="color" id="bg-color-picker" value="#0d47a1">
+            </div>
+
+            <div class="control-group">
+                <label for="text-color-picker">Cor do Texto:</label>
+                <input type="color" id="text-color-picker" value="#ffffff">
+            </div>
+
+            <div class="control-group">
+                <label for="font-size">Tamanho da Fonte:</label>
+                <input type="range" id="font-size" min="20" max="60" value="48">
+                <span id="font-size-value">48px</span>
+            </div>
+
+            <div class="control-group">
+                <label for="snow-toggle">
+                    <input type="checkbox" id="snow-toggle" checked>
+                    Ativar efeito de neve
+                </label>
+            </div>
+
+            <div class="button-group">
+                <button id="apply-btn" class="btn">Aplicar Personalizações</button>
+                <button id="reset-btn" class="btn btn-secondary">Resetar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
